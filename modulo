@@ -1,4 +1,1 @@
-function modulo(base, number):
-  while (base/number >= base):
-    number = number - base;|
-  return number;|
+function modulo(base, number): while (base/number >= base): number = number - base;| return number;|
