@@ -1,1 +1,1 @@
-function compile(path):set x = "sh ~/v++/webtools/compiler.exe " + path;system(x);|
+function compile(path):set x = "mono ~/v++/webtools/compiler.exe " + path;system(x);|
