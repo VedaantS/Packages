@@ -1,3 +1,2 @@
 function createApp(name): set command = "cordova create " + name + " com.vpp." + name; system(command);| 
-
-function compile(file, app): set command = "mono ~/v++/webtools/compiler.exe " + file; system(command);
+function compile(file, app): set vppFile = file + ".vpp"; set htmlFile = file + ".html"; set jsFile = file + ".js"; set command = "mono ~/v++/webtools/compiler.exe " + vppFile;system(command); set commandH = "mv " + htmlFile + " ./" + app + "/www/" + htmlFile; set commandJ = "mv " + jsFile + " ./" + app + "/www/" + jsFile; system(commandH); system(commandJ);|
