@@ -1,0 +1,1 @@
+function createApp(name): set command = "cordova create " + name + " com.vpp." + name; system(command);|
