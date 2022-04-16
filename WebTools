@@ -1,0 +1,1 @@
+function compile(path): set x = "run-web " + path; system(x);|
